@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6a1b9a;
+    /* Purple fallback */
+    background-image: linear-gradient(rgba(106, 27, 154, 0.9), rgba(106, 27, 154, 0.9)), url('../Images/hero.PNG');
+    /* Purple overlay */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.sidebar-item:hover {
+    transform: translateX(5px);
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a1b9a;
+    /* Purple icon */
+}
+
+.sidebar-item span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Login Card */
+.login-card {
+    background: #fff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.logo-area {
+    margin-bottom: 20px;
+}
+
+.ebiz-logo {
+    height: 50px;
+    /* Adjust based on actual logo */
+}
+
+.welcome-title {
+    color: #6a1b9a;
+    margin: 0 0 10px;
+    font-size: 24px;
+}
+
+.welcome-subtitle {
+    color: #6a1b9a;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+.instruction {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.ebiz-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #6a1b9a;
+}
+
+.forgot-link {
+    display: block;
+    text-align: right;
+    font-size: 12px;
+    color: #6a1b9a;
+    text-decoration: none;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.show-pass {
+    float: right;
+    margin-top: -30px;
+    margin-right: 10px;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    color: #6a1b9a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.login-btn {
+    width: 100%;
+    background: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background: #501375;
+}
+
+/* Bottom Right Controls */
+.bottom-right-controls {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.control-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icon-circle-small {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a1b9a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.play-icon {
+    /* Specific style for play icon if needed */
+}
+
+.chat-bubble .icon-circle-small {
+    width: 60px;
+    height: 60px;
+}
